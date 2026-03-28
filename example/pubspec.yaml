@@ -1,0 +1,14 @@
+name: pretext_example
+description: Example app for the pretext package.
+publish_to: none
+version: 1.0.0
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  pretext:
+    path: ../
