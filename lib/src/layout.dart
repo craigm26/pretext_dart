@@ -38,8 +38,7 @@ int _wrapLines(
       text = text.trimRight();
       // Subtract the widths of trimmed trailing space segments.
       var j = endSeg - 1;
-      while (j >= lineStart &&
-          segments[j].kind == SegmentKind.space) {
+      while (j >= lineStart && segments[j].kind == SegmentKind.space) {
         width -= segments[j].width;
         j--;
       }

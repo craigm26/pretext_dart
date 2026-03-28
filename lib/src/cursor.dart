@@ -18,8 +18,7 @@ class LayoutCursor {
       LayoutCursor(segmentIndex: 0, graphemeIndex: 0);
 
   @override
-  String toString() =>
-      'LayoutCursor(seg=$segmentIndex, gph=$graphemeIndex)';
+  String toString() => 'LayoutCursor(seg=$segmentIndex, gph=$graphemeIndex)';
 
   @override
   bool operator ==(Object other) =>
@@ -53,8 +52,7 @@ class LayoutLine {
   final LayoutCursor end;
 
   @override
-  String toString() =>
-      'LayoutLine("$text", w=$width, $start→$end)';
+  String toString() => 'LayoutLine("$text", w=$width, $start→$end)';
 }
 
 /// A laid-out line *without* its text string — width and cursor range only.
@@ -78,8 +76,7 @@ class LayoutLineRange {
   final LayoutCursor end;
 
   @override
-  String toString() =>
-      'LayoutLineRange(w=$width, $start→$end)';
+  String toString() => 'LayoutLineRange(w=$width, $start→$end)';
 }
 
 /// Result of [layout].
