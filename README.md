@@ -1,5 +1,9 @@
 # pretext
 
+[![pub.dev](https://img.shields.io/pub/v/pretext.svg)](https://pub.dev/packages/pretext)
+[![CI](https://github.com/craigm26/pretext_dart/actions/workflows/ci.yml/badge.svg)](https://github.com/craigm26/pretext_dart/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 A Dart port of [chenglou/pretext](https://github.com/chenglou/pretext) — pure-arithmetic multiline text layout with **variable per-line widths**.
 
 The killer feature is `layoutNextLine()`: wrap text with a *different* `maxWidth` per line, enabling text to flow around images, shapes, or any obstacle. Flutter's `TextPainter` cannot do this — it takes a single `maxWidth` for the whole paragraph.

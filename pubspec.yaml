@@ -4,7 +4,9 @@ description: >-
   variable per-line widths (layoutNextLine). Pure Dart core, Flutter
   convenience layer. Inspired by github.com/chenglou/pretext.
 version: 0.1.0
-homepage: https://github.com/chenglou/pretext
+homepage: https://github.com/craigm26/pretext_dart
+repository: https://github.com/craigm26/pretext_dart
+issue_tracker: https://github.com/craigm26/pretext_dart/issues
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
