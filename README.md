@@ -155,6 +155,25 @@ class TextPainterMeasure {
 }
 ```
 
+
+## Publishing
+
+The first publish requires a browser (OAuth). Run this on your **local machine** (not the Pi):
+
+```bash
+git clone https://github.com/craigm26/pretext_dart /tmp/pretext_dart
+cd /tmp/pretext_dart
+dart pub publish
+```
+
+After that, **future releases are fully automated** — just push a version tag:
+
+```bash
+git tag v0.1.1 && git push origin v0.1.1
+```
+
+GitHub Actions publishes to pub.dev automatically via OIDC trusted publishing (no tokens needed).
+
 ## Credits
 
 This package is a Dart port of [pretext](https://github.com/chenglou/pretext) by [@chenglou](https://github.com/chenglou). All the core ideas — measurement-once, cursor-based layout, variable-width lines — are from the original JS library. Go star it.
