@@ -8,7 +8,7 @@ on:
 
 jobs:
   test:
-    name: Test (Dart ${{ matrix.dart }})
+    name: Dart ${{ matrix.dart }}
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -27,7 +27,7 @@ jobs:
         run: dart test test/ -r expanded
 
   pub-score:
-    name: pub.dev score check
+    name: pana
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -35,7 +35,7 @@ jobs:
         with:
           sdk: stable
       - run: dart pub get
-      - name: pana dry-run
+      - name: pana
         run: |
           dart pub global activate pana
           dart pub global run pana --no-warning . || true

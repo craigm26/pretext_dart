@@ -16,9 +16,10 @@ dependencies:
   characters: ^1.3.0
 
 dev_dependencies:
-  flutter:
-    sdk: flutter
-  flutter_test:
-    sdk: flutter
   test: ^1.24.0
   lints: ^3.0.0
+
+# Flutter convenience layer (flutter/pretext_flutter.dart) is not tested here.
+# Downstream Flutter apps bring their own SDK dependency.
+# To run Flutter-specific tests locally:
+#   flutter test (requires Flutter SDK installed)
