@@ -1,0 +1,8 @@
+.dart_tool/
+.packages
+build/
+*.g.dart
+pubspec.lock
+example/.dart_tool/
+example/build/
+example/pubspec.lock
