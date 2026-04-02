@@ -31,6 +31,8 @@ export 'package:pretext/pretext.dart';
 /// final prepared = prepareWithSegments(text, measurer.measure);
 /// ```
 class TextPainterMeasure {
+  /// Creates a [TextPainterMeasure] with a specific [style] and optional
+  /// [textScaleFactor].
   TextPainterMeasure(this.style, {this.textScaleFactor = 1.0});
 
   /// The text style to measure against. Must match your widget's style.

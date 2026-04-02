@@ -35,7 +35,7 @@ library pretext;
 
 export 'src/cursor.dart';
 export 'src/prepared_text.dart' show PreparedText, PreparedTextWithSegments;
-export 'src/segment.dart' show WhiteSpace;
+export 'src/segment.dart' show WhiteSpace, Segment, SegmentKind;
 export 'src/layout.dart';
 
 import 'src/prepared_text.dart';
