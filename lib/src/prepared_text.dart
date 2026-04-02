@@ -2,6 +2,7 @@ import 'segment.dart';
 
 /// Opaque result of [prepare]. Pass to [layout].
 class PreparedText {
+  /// Creates a [PreparedText] from a list of segments.
   PreparedText.fromSegments(List<Segment> segments) : _segments = segments;
   final List<Segment> _segments;
 
@@ -12,6 +13,7 @@ class PreparedText {
 /// Opaque result of [prepareWithSegments]. Pass to [layoutWithLines],
 /// [layoutNextLine], or [walkLineRanges].
 class PreparedTextWithSegments {
+  /// Creates a [PreparedTextWithSegments] from a list of segments.
   PreparedTextWithSegments.fromSegments(this.segments);
 
   /// Ordered list of segments (words, spaces, hard breaks) with cached widths.
