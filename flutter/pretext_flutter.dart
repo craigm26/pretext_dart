@@ -14,8 +14,6 @@ library pretext_flutter;
 
 import 'package:flutter/widgets.dart';
 import 'package:pretext/pretext.dart';
-import 'package:pretext/src/segment.dart';
-import 'package:pretext/src/prepared_text.dart';
 
 export 'package:pretext/pretext.dart';
 
