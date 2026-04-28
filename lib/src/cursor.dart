@@ -1,5 +1,6 @@
 /// Position within a [PreparedTextWithSegments]'s segment stream.
 class LayoutCursor {
+  /// Creates a [LayoutCursor] pointing to a specific segment and grapheme.
   const LayoutCursor({
     required this.segmentIndex,
     required this.graphemeIndex,
@@ -32,6 +33,7 @@ class LayoutCursor {
 
 /// A laid-out line with its full text string, width, and cursor range.
 class LayoutLine {
+  /// Creates a [LayoutLine] with the given text, width, and cursor range.
   const LayoutLine({
     required this.text,
     required this.width,
@@ -60,6 +62,7 @@ class LayoutLine {
 /// Returned by [walkLineRanges]; avoids building string copies when you only
 /// need geometry (e.g. binary-searching optimal container width).
 class LayoutLineRange {
+  /// Creates a [LayoutLineRange] with the given width and cursor range.
   const LayoutLineRange({
     required this.width,
     required this.start,
@@ -81,6 +84,7 @@ class LayoutLineRange {
 
 /// Result of [layout].
 class LayoutResult {
+  /// Creates a [LayoutResult] with the given height and line count.
   const LayoutResult({required this.height, required this.lineCount});
 
   /// Total pixel height of the laid-out text.
@@ -92,6 +96,7 @@ class LayoutResult {
 
 /// Result of [layoutWithLines].
 class LayoutResultWithLines {
+  /// Creates a [LayoutResultWithLines] with the given height, line count, and lines.
   const LayoutResultWithLines({
     required this.height,
     required this.lineCount,

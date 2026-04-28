@@ -14,8 +14,6 @@ library pretext_flutter;
 
 import 'package:flutter/widgets.dart';
 import 'package:pretext/pretext.dart';
-import 'package:pretext/src/segment.dart';
-import 'package:pretext/src/prepared_text.dart';
 
 export 'package:pretext/pretext.dart';
 
@@ -33,6 +31,8 @@ export 'package:pretext/pretext.dart';
 /// final prepared = prepareWithSegments(text, measurer.measure);
 /// ```
 class TextPainterMeasure {
+  /// Creates a [TextPainterMeasure] with a specific [style] and optional
+  /// [textScaleFactor].
   TextPainterMeasure(this.style, {this.textScaleFactor = 1.0});
 
   /// The text style to measure against. Must match your widget's style.

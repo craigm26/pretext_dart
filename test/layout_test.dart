@@ -88,7 +88,8 @@ void main() {
 
     test('line cursors are monotonically increasing', () {
       final p = prepareWithSegments('a b c d e', monoMeasure);
-      final r = layoutWithLines(p, 24, 20); // each word=8px, space=8px → 1 word/line
+      final r =
+          layoutWithLines(p, 24, 20); // each word=8px, space=8px → 1 word/line
       for (var i = 1; i < r.lines.length; i++) {
         expect(
           r.lines[i].start.segmentIndex,

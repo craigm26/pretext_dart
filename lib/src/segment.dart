@@ -23,6 +23,7 @@ enum SegmentKind {
 
 /// An atomic unit of text with its pre-measured pixel width.
 class Segment {
+  /// Creates a [Segment] with the given text, kind, and width.
   const Segment({
     required this.text,
     required this.kind,

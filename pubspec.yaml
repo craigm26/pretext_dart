@@ -1,9 +1,7 @@
 name: pretext
-description: >-
-  Dart port of pretext — pure-arithmetic multiline text layout with
-  variable per-line widths (layoutNextLine). Pure Dart core, Flutter
-  convenience layer. Inspired by github.com/chenglou/pretext.
+description: Dart port of Pretext for multiline text layout with variable line widths. Includes a pure Dart core and a Flutter helper layer.
 version: 0.1.0
+
 homepage: https://github.com/craigm26/pretext_dart
 repository: https://github.com/craigm26/pretext_dart
 issue_tracker: https://github.com/craigm26/pretext_dart/issues
@@ -13,6 +11,9 @@ environment:
 
 dependencies:
   characters: ^1.3.0
+
+  flutter:
+    sdk: flutter
 
 dev_dependencies:
   test: ^1.24.0

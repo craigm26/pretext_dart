@@ -1,4 +1,3 @@
-import 'package:pretext/pretext.dart';
 import 'package:pretext/src/segment.dart';
 import 'package:test/test.dart';
 
@@ -53,6 +52,7 @@ void main() {
         called += s.length;
         return s.length.toDouble();
       }
+
       segmentAndMeasure('foo bar', countingMeasure);
       // "foo"=3, " "=1, "bar"=3 → total = 7
       expect(called, 7);
